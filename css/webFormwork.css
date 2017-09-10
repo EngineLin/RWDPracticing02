@@ -1,0 +1,167 @@
+/*basic*/
+*{
+	font-family: MicrosoftJhengHeiRegular;
+}
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.clearFix{
+	clear:both;
+}
+/*header*/
+.header{
+	position: relative;
+	background:url(../images/header_desktop.png);
+	background-position: top;
+	height: 420px;
+}
+.topBanner{
+	background: #000;
+	opacity: 0.8;
+}
+.logo {
+	float: left;
+	background-image: url(../images/logo_w@svg.svg);
+	width: 120px;
+	height: 24px;
+	margin: 16px 0 16px 42px;
+}
+.logo h1{
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.menuOut a, .menuIn a{
+	text-decoration: none;
+}
+.menuOut{
+	float: right;
+	margin: 5px 15px 0 0;
+}
+.menuOutside{
+	float: left;
+	font-size: 21px;
+	padding: 10px 15px;
+	color: #fff;
+}
+.menuOutside:hover{
+	box-sizing: border-box;
+	border-bottom:1px solid #fff;
+}
+.menuIn{
+	display: none;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+}
+.menuInside{
+	background-color: #000;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+	font-size: 21px;
+	padding: 10px 15px;
+	color: #fff;
+}
+.bar{
+	display: none;
+	margin: 6px;
+	font-size: 44px;
+	float: right;
+	color: #fff;
+}
+@media (max-width: 600px) {
+	.header{
+		background:url(../images/header_mobile.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.menuOut{
+		display:none;
+	}
+	.bar{
+		display: block;
+	}
+	.menuOpen{
+		display: block;
+	}
+}
+.title{
+	position: absolute;
+	top: 123px;
+	left: 50%;
+	margin-left: -216px;
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	padding: 20px;
+	z-index: 10;
+}
+.title h2{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.title p{
+	text-align:center;
+	line-height: 25px;
+	font-size: 16px;
+}
+@media (max-width: 600px) {	
+	.title{
+		margin-left: -164px;
+	}
+	.title span{
+		display: block;
+		text-align: center;
+	}
+}
+/*footer*/
+.footer{
+	background: #efe9e7;
+	color: #3D1101;
+	padding-bottom: 50px;
+}
+.about{
+	margin: 50px 21px 0 43px;
+	float: left;
+	max-width: 30%;
+}
+.contact{
+	margin-top: 50px;
+	float: left;
+	max-width: 30%;
+}
+.about h2, .contact h2{
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+.messageOus{
+	float: right;
+}
+.logo2{
+	margin: 54px 42px 0 0;
+}
+.contactIcon{
+	margin-top: 22px;
+	margin-right: 30px;
+}
+.contactIcon a{
+	float: right;
+	margin-right: 12px;
+	width: 31px;
+	height: 36px;
+}
+.contactIcon img{
+	width: 100%;
+}
+@media (max-width: 741px) {
+	.about, .contact{
+		float: none;
+		max-width: 80%;
+		margin: 0px auto 20px ;
+	}
+	.about h2, .contact h2{
+	margin-bottom: 15px;
+	}
+}

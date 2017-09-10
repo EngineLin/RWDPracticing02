@@ -1,0 +1,170 @@
+.content{
+	background-color: #efe9e7;
+}
+.aside{
+	margin-left: 42px;
+	float: left;
+	color: #3D1101;
+	width: 220px;
+}
+.aside p{
+	font-size: 20px;
+	margin: 0 0 16px 0;
+	padding-top: 40px;
+}
+.aside p i{
+	margin-right: 15px;
+}
+.aside a{
+	text-decoration: none;
+	color: #3D1101;
+}
+.aside li{
+	font-size: 16px;
+	border-bottom: 1px solid #3D1101;
+	line-height: 32px;
+}
+.aside li:hover{
+	background-color: #3D1101;
+	color: #fff;
+}
+@media (max-width: 776px) {
+	.aside{
+		float: none;
+		width: auto;
+		max-width: 80%;
+		margin:0 10%;
+	}	
+}
+/*search*/
+.bodyArea{
+	margin-left: 262px;
+}
+@media (max-width: 776px) {
+	.bodyArea{
+		margin: 0;
+	}
+}
+.search{
+	float: left;
+	width: 57.45%;
+	margin: 48px 0 0 20px;
+}
+.searchBox{
+	float: left;
+	width:85%;
+	font-size: 18px;
+	background-color: #efe9e7;
+	border: 2px solid #3D1101;
+	line-height: 26px;
+}
+.searchBox:focus{
+	outline-style: none;
+	box-shadow: none;
+}
+.search button{
+	width: 36px;
+	height: 32px;
+	background-color: #3D1101;
+	border-radius: 5%;
+	padding: 0;
+	border-color: #3D1101;
+}
+.search button:hover{
+	cursor: pointer;
+}
+.search button i{
+	color: #fff;
+}
+/*shop*/
+.shop{
+	float: left;
+	margin:54px 0 0 8%;
+}
+.shop a{
+	color: #3D1101;
+}
+.shop a:hover{
+	color: blue;
+}
+.shop li{
+	padding: 0 15px;
+	float: left;
+}
+.shopping{
+	border-right: 1px solid #3D1101;
+}
+@media (max-width:484px) {
+	.search{
+		float: none;
+		width: 90%;
+		margin: 48px 10% 20px;
+	}
+	.searchBox{
+		width:80%;
+	}
+	.shop{
+		float: right;
+		margin:0 10px 50px;
+	}	
+}
+/*list*/
+.listArea{
+	color: #3D1101;
+	float: left;
+	margin:26px 0 30px;
+}
+.listArea li{
+	float: left;
+	width: 214px;
+	margin: 0 16px 30px;
+	box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+.listArea img{
+	width: 100%;
+}
+.heart{
+	text-decoration: none;
+	color:#000;
+}
+.listArea h2{
+	font-size: 20px;
+	text-align:center;
+	padding: 8px 0;
+	margin-bottom: 20px;
+
+}
+.listArea h2 span{
+	font-size: 12px;
+	padding: 0 0 8px 0;
+	border-bottom: 1px solid #3D1101;
+}
+.listArea p{
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 13px;
+}
+.listArea button{
+	background-color: #efe9e7;
+	border-color: #FF5E45;
+	color: #FF5E45;
+	width: 200px;
+	height: 28px;
+	display:block;
+	margin:0 auto 10px;
+}
+@media (max-width: 776px) {
+	.listArea{
+		float: none;
+	}
+	.listArea li{
+		width: 90%;
+		margin: 10px 5% 20px;
+	}
+	.listArea img{
+		display:block;
+		margin: 0 auto;
+		max-width:300px;
+	}
+}
