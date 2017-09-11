@@ -1,0 +1,371 @@
+/*basic*/
+*{
+	font-family: MicrosoftJhengHeiRegular;
+}
+#wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.clearFix{
+	clear:both;
+}
+/*header*/
+#header{
+	position: relative;
+	background:url(../images/header_desktop.png);
+	background-position: top;
+	height: 420px;
+}
+/* navbar */
+#banner{
+	background: rgba(0,0,0,.8);
+}
+.logo {
+	float: left;
+	background-image: url(../images/logo_w@svg.svg);
+	width: 120px;
+	height: 24px;
+	margin: 16px 0 16px 42px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#banner a{
+	text-decoration: none;
+	color:#fff;
+}
+#menuOutside{
+	float: right;
+	margin: 5px 15px 0 0;
+}
+.menuOutsideList{
+	float: left;
+}
+.menuOutsideList a{
+	line-height: 50px;
+	padding: 12px 15px;
+	font-size: 21px;
+}
+.menuOutsideList a:hover{
+	box-sizing: border-box;
+	border-bottom: 3px solid #fff;
+}
+#menuInside{
+	display: none;
+	width: 100%;
+	top:56px;
+	position: absolute;
+	z-index: 100;
+}
+.menuInsideList a{
+	display:block;
+	background-color: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	padding: 10px 15px;
+	font-size: 21px;
+}
+.menuInsideList a:hover{
+	background-color: rgba(0,0,0,1);
+}
+/* 漢堡選單 */
+#bar{
+	display: none;
+	margin: 6px;
+	font-size: 44px;
+	float: right;
+	color: #fff;
+}
+/* 767為iPad直立螢幕之後的尺寸、視為手機尺寸 */
+@media (max-width: 767px) {
+	#menuOutside{
+		display:none;
+	}
+	#bar{
+		display: block;
+	}
+	.menuOpen{
+		display: block;
+	}
+}
+/* 414以下為小尺寸手機優化 */
+@media (max-width: 414px){
+	#header{
+	background:url(../images/header_mobile.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	}
+}
+/* title */
+#title{
+	position: absolute;
+	top: 123px;
+	text-align: center;
+	left: calc(50% - 216px);
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	padding: 20px;
+	z-index: 10;
+}
+#title h2{
+	font-size: 36px;
+	margin: 0 0 16px 0;
+}
+#title p{
+	font-size: 16px;
+	line-height: 25px;
+}
+@media (max-width: 414px) {	
+	#title{
+		left: calc(50% - 148px);
+	}
+	#title h2{
+		font-size: 32px;
+	}
+	#title span{
+		display: block;
+		text-align: center;
+	}
+}
+
+/* content */
+.content{
+	background-color: #efe9e7;
+}
+.aside{
+	margin-left: 42px;
+	float: left;
+	color: #3D1101;
+	width: 220px;
+}
+.aside p{
+	font-size: 20px;
+	margin: 0 0 16px 0;
+	padding-top: 40px;
+}
+.aside p i{
+	margin-right: 15px;
+}
+.aside li{
+	font-size: 16px;
+	border-bottom: 1px solid #3D1101;
+	line-height: 32px;
+}
+.aside a{
+	display:block;
+	text-decoration: none;
+	color: #3D1101;
+}
+.aside a:hover{
+	background-color: #3D1101;
+	color: #fff;
+}
+@media (max-width: 767px) {
+	.aside{
+		float: none;
+		width: auto;
+		max-width: 80%;
+		margin:0 10%;
+	}	
+}
+/* bodyArea */
+.bodyArea{
+	margin-left: 262px;
+}
+@media (max-width: 767px) {
+	.bodyArea{
+		margin: 0;
+	}
+}
+/*search*/
+.search{
+	float: left;
+	width: 57.45%;
+	margin: 48px 0 0 20px;
+}
+.searchBox{
+	float: left;
+	width:85%;
+	font-size: 18px;
+	background-color: #efe9e7;
+	border: 2px solid #3D1101;
+	line-height: 26px;
+}
+.searchBox:focus{
+	outline-style: none;
+	box-shadow: none;
+}
+.search button{
+	width: 36px;
+	height: 32px;
+	background-color: #3D1101;
+	border-radius: 5%;
+	padding: 0;
+	border-color: #3D1101;
+}
+.search button:hover{
+	cursor: pointer;
+}
+.search button i{
+	color: #fff;
+}
+/*shop*/
+.shop{
+	float: left;
+	margin:54px 0 0 8%;
+}
+.shop a{
+	text-decoration: none;
+	color: #3D1101;
+}
+.shop a:hover{
+	color: blue;
+}
+.shop li{
+	padding: 0 15px;
+	float: left;
+}
+.shopping{
+	border-right: 1px solid #3D1101;
+}
+@media (max-width:484px) {
+	.search{
+		float: none;
+		width: 90%;
+		margin: 48px 10% 20px;
+	}
+	.searchBox{
+		width:80%;
+	}
+	.shop{
+		float: right;
+		margin:0 10px 50px;
+	}	
+}
+/*list*/
+.listArea{
+	color: #3D1101;
+	float: left;
+	margin:26px 0 30px;
+}
+.listArea li{
+	position: relative;
+	float: left;
+	width: 214px;
+	margin: 0 16px 30px;
+	box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+.listArea img{
+	width: 100%;
+}
+.heart{
+	position: absolute;
+	top:85.59px;
+	left: 0;
+	text-decoration: none;
+	color:#000;
+	display: block;
+}
+@media(max-width : 767px) {
+	.heart{
+		top: 120px;
+		left: calc(50% - 150px) ;
+	}
+}
+@media(max-width : 350px) {
+	.heart{
+		position: static;
+	}
+}
+.listArea h2{
+	font-size: 20px;
+	text-align:center;
+	padding: 8px 0;
+	margin-bottom: 20px;
+}
+.listArea h2 span{
+	font-size: 12px;
+	padding: 0 0 8px 0;
+	border-bottom: 1px solid #3D1101;
+}
+.listArea p{
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 13px;
+}
+.listArea button{
+	background-color: #efe9e7;
+	border-color: #FF5E45;
+	color: #FF5E45;
+	width: 200px;
+	height: 28px;
+	display:block;
+	margin:0 auto 10px;
+}
+@media (max-width: 767px) {
+	.listArea{
+		float: none;
+	}
+	.listArea li{
+		width: 90%;
+		margin: 10px 5% 20px;
+	}
+	.listArea img{
+		display:block;
+		margin: 0 auto;
+		max-width:300px;
+	}
+}
+
+/*footer*/
+#footer{
+	background: #efe9e7;
+	color: #3D1101;
+	padding-bottom: 50px;
+}
+.about{
+	margin: 50px 21px 0 43px;
+	float: left;
+	max-width: 30%;
+}
+.contact{
+	margin-top: 50px;
+	float: left;
+	max-width: 30%;
+}
+.about h2, .contact h2{
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+.messageOus{
+	float: right;
+}
+.logo2{
+	margin: 54px 42px 0 0;
+}
+.contactIcon{
+	margin-top: 22px;
+	margin-right: 30px;
+}
+.contactIcon a{
+	float: right;
+	margin-right: 12px;
+	width: 31px;
+	height: 36px;
+}
+.contactIcon img{
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.about, .contact{
+		float: none;
+		max-width: 80%;
+		margin: 0px auto 20px ;
+	}
+	.about h2, .contact h2{
+	margin-bottom: 15px;
+	}
+}
